@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>버피 일일 운용 보고 2026-08-13</title>
+<style>
+:root {
+  --bg:#0b1220; --card:#121a2b; --line:#243049; --text:#e8eef7; --muted:#93a0b8;
+  --buy:#3dd68c; --sell:#ff6b6b; --gold:#e7c27a;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0; font-family:"Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+  background:radial-gradient(1200px 600px at 10% -10%, #1a2744 0%, var(--bg) 55%);
+  color:var(--text); line-height:1.5;
+}
+.wrap { max-width:980px; margin:0 auto; padding:28px 18px 64px; }
+.kicker { color:var(--gold); letter-spacing:.12em; font-size:12px; text-transform:uppercase; }
+h1 { font-size:28px; margin:6px 0 8px; font-weight:720; }
+.lead { color:var(--muted); margin:0 0 22px; }
+.cards { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:18px 0 28px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 14px 12px; }
+.card .lab { color:var(--muted); font-size:12px; }
+.card .val { font-size:20px; font-weight:700; margin-top:4px; }
+.buy { color:var(--buy); }
+.sell { color:var(--sell); }
+h2 { font-size:16px; margin:28px 0 10px; color:var(--gold); }
+table { width:100%; border-collapse:collapse; background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+th, td { padding:9px 10px; text-align:left; font-size:13px; border-bottom:1px solid var(--line); }
+th { color:var(--muted); font-weight:600; background:#0e1626; }
+td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+td.code { color:var(--muted); font-family:ui-monospace, Consolas, monospace; }
+td.name { font-weight:650; }
+tr.reason td { color:var(--muted); font-size:12px; padding-top:0; border-bottom:1px solid var(--line); }
+.empty, .muted { color:var(--muted); }
+.foot { margin-top:28px; color:var(--muted); font-size:12px; }
+@media (max-width:800px) {
+  .cards { grid-template-columns:1fr 1fr; }
+  h1 { font-size:22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">BUFFY DAILY DESK · KB AUTO TRADE</div>
+  <h1>2026-08-13 (목) 일일 운용 보고</h1>
+  <p class="lead">아침 세션부터 장 마감까지 로그 실측. 버피 보고. 수익 보장 없음.</p>
+  <div class="cards">
+    <div class="card"><div class="lab">오늘 손익</div><div class="val buy">+43,570원</div></div>
+    <div class="card"><div class="lab">매수 체결</div><div class="val buy">10건 · 1,039,380원</div></div>
+    <div class="card"><div class="lab">매도 체결</div><div class="val sell">8건 · 836,840원</div></div>
+    <div class="card"><div class="lab">종가 평가 / 주문가능</div><div class="val">3,182,413원 / 6,593원</div></div>
+  </div>
+  <p><b>한 줄 결론</b> · 매수 10건 1,039,380원 / 매도 8건 836,840원 / 오늘 손익 +43,570원</p>
+
+  <h2>매수</h2>
+  <table>
+    <thead><tr><th>시각</th><th>종목</th><th>코드</th><th>구분</th><th class="num">수량</th><th class="num">단가</th><th class="num">금액</th></tr></thead>
+    <tbody>
+      <tr><td>09:00</td><td class='name'>SK텔레콤</td><td class='code'>017670</td><td class='buy'>매수체결</td><td class='num'>2주</td><td class='num'>91,000원</td><td class='num'>182,000원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] SK텔레콤 - SMA5 87,620/SMA20 88,045, 이격 -0.3%, 전일비 +3.08%, 5일모멘텀 -5.6%, 20일모멘텀 ...</td></tr>
+<tr><td>09:11</td><td class='name'>SK이터닉스</td><td class='code'>475150</td><td class='buy'>매수체결</td><td class='num'>3주</td><td class='num'>56,700원</td><td class='num'>170,100원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] SK이터닉스 - SMA5 52,120/SMA20 54,888, 이격 -4.0%, 전일비 +7.59%, 5일모멘텀 -8.7%, 20일모멘텀...</td></tr>
+<tr><td>09:21</td><td class='name'>미래에셋증권</td><td class='code'>006800</td><td class='buy'>매수체결</td><td class='num'>4주</td><td class='num'>39,500원</td><td class='num'>158,000원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 미래에셋증권 - SMA5 35,370/SMA20 35,735, 이격 +2.1%, 전일비 +7.95%, 5일모멘텀 +3.7%, 20일모멘텀...</td></tr>
+<tr><td>09:31</td><td class='name'>금호타이어</td><td class='code'>073240</td><td class='buy'>매수체결</td><td class='num'>4주</td><td class='num'>8,000원</td><td class='num'>32,000원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 금호타이어 - SMA5 7,612/SMA20 6,677, 이격 +11.1%, 전일비 +7.55%, 5일모멘텀 +0.5%, 20일모멘텀 +...</td></tr>
+<tr><td>10:13</td><td class='name'>금호건설</td><td class='code'>002990</td><td class='buy'>매수체결</td><td class='num'>9주</td><td class='num'>15,700원</td><td class='num'>141,300원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 금호건설 - 폴백유동성 전일비 +5.16%, SMA5 10,938 / 뉴스:시장뉴스긍정(+0.62), 종목뉴스긍정(+0.55), 「금호건...</td></tr>
+<tr><td>10:44</td><td class='name'>금호건설</td><td class='code'>002990</td><td class='buy'>매수체결</td><td class='num'>2주</td><td class='num'>14,990원</td><td class='num'>29,980원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 금호건설 - 폴백유동성 전일비 +0.27%, SMA5 10,938 / 뉴스:시장뉴스긍정(+0.73), 종목뉴스긍정(+0.64), 「금호건...</td></tr>
+<tr><td>14:42</td><td class='name'>SK텔레콤</td><td class='code'>017670</td><td class='buy'>매수체결</td><td class='num'>1주</td><td class='num'>91,700원</td><td class='num'>91,700원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] SK텔레콤 - SMA5 87,620/SMA20 88,045, 이격 -0.3%, 전일비 +4.21%, 5일모멘텀 -5.6%, 20일모멘텀 ...</td></tr>
+<tr><td>14:42</td><td class='name'>SK이터닉스</td><td class='code'>475150</td><td class='buy'>매수체결</td><td class='num'>1주</td><td class='num'>56,500원</td><td class='num'>56,500원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] SK이터닉스 - SMA5 52,120/SMA20 54,888, 이격 -4.0%, 전일비 +6.83%, 5일모멘텀 -8.7%, 20일모멘텀...</td></tr>
+<tr><td>14:53</td><td class='name'>한국콜마</td><td class='code'>161890</td><td class='buy'>매수체결</td><td class='num'>1주</td><td class='num'>134,000원</td><td class='num'>134,000원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 한국콜마 - 폴백유동성 전일비 +0.98%, SMA5 111,980 / 뉴스:시장뉴스긍정(+0.73) / 위험선호(코스피 +3.35%) ...</td></tr>
+<tr><td>15:03</td><td class='name'>금호건설</td><td class='code'>002990</td><td class='buy'>매수체결</td><td class='num'>3주</td><td class='num'>14,600원</td><td class='num'>43,800원</td></tr><tr class='reason'><td></td><td colspan='6'>[intraday] 금호건설 - 폴백유동성 전일비 -2.48%, SMA5 10,938 / 뉴스:시장뉴스긍정(+0.73) / 위험선호(코스피 +2.64%) |...</td></tr>
+    </tbody>
+  </table>
+
+  <h2>매도</h2>
+  <table>
+    <thead><tr><th>시각</th><th>종목</th><th>코드</th><th>구분</th><th class="num">수량</th><th class="num">단가</th><th class="num">금액</th></tr></thead>
+    <tbody>
+      <tr><td>09:11</td><td class='name'>SK텔레콤</td><td class='code'>017670</td><td class='sell'>매도체결</td><td class='num'>2주</td><td class='num'>91,600원</td><td class='num'>183,200원</td></tr><tr class='reason'><td></td><td colspan='6'>차트패턴 매도 (데드크로스5/20)</td></tr>
+<tr><td>09:21</td><td class='name'>SK이터닉스</td><td class='code'>475150</td><td class='sell'>매도체결</td><td class='num'>3주</td><td class='num'>56,500원</td><td class='num'>169,500원</td></tr><tr class='reason'><td></td><td colspan='6'>데드크로스·모멘텀 약화 - 리스크 축소 매도</td></tr>
+<tr><td>10:13</td><td class='name'>미래에셋증권</td><td class='code'>006800</td><td class='sell'>매도체결</td><td class='num'>4주</td><td class='num'>38,350원</td><td class='num'>153,400원</td></tr><tr class='reason'><td></td><td colspan='6'>손실축소 (-2.7%, 추세훼손) - 더 큰 손실 방지</td></tr>
+<tr><td>10:31</td><td class='name'>금호건설</td><td class='code'>002990</td><td class='sell'>손절</td><td class='num'>9주</td><td class='num'>10,460원</td><td class='num'>94,140원</td></tr><tr class='reason'><td></td><td colspan='6'>STOPLOSS 10:31:00</td></tr>
+<tr><td>14:33</td><td class='name'>대원전선</td><td class='code'>006340</td><td class='sell'>손절</td><td class='num'>6주</td><td class='num'>11,230원</td><td class='num'>67,380원</td></tr><tr class='reason'><td></td><td colspan='6'>STOPLOSS 14:32:50</td></tr>
+<tr><td>14:53</td><td class='name'>SK텔레콤</td><td class='code'>017670</td><td class='sell'>매도체결</td><td class='num'>1주</td><td class='num'>91,900원</td><td class='num'>91,900원</td></tr><tr class='reason'><td></td><td colspan='6'>차트패턴 매도 (데드크로스5/20)</td></tr>
+<tr><td>14:53</td><td class='name'>SK이터닉스</td><td class='code'>475150</td><td class='sell'>매도체결</td><td class='num'>1주</td><td class='num'>56,400원</td><td class='num'>56,400원</td></tr><tr class='reason'><td></td><td colspan='6'>데드크로스·모멘텀 약화 - 리스크 축소 매도</td></tr>
+<tr><td>14:55</td><td class='name'>금호건설</td><td class='code'>002990</td><td class='sell'>손절</td><td class='num'>2주</td><td class='num'>10,460원</td><td class='num'>20,920원</td></tr><tr class='reason'><td></td><td colspan='6'>STOPLOSS 14:54:54</td></tr>
+    </tbody>
+  </table>
+
+  <h2>장 마감 실보유</h2>
+  <table>
+    <thead><tr><th>종목</th><th>코드</th><th class="num">수량</th><th class="num">평단</th><th class="num">종가</th><th class="num">평가손익</th></tr></thead>
+    <tbody>
+      <tr><td class='name'>금호건설</td><td class='code'>002990</td><td class='num'>3주</td><td class='num'>14,600원</td><td class='num'>14,370원</td><td class='num sell'>-690원 (-1.58%)</td></tr>
+<tr><td class='name'>삼성SDI</td><td class='code'>006400</td><td class='num'>2주</td><td class='num'>488,500원</td><td class='num'>487,000원</td><td class='num sell'>-3,000원 (-0.31%)</td></tr>
+<tr><td class='name'>미래에셋증권</td><td class='code'>006800</td><td class='num'>3주</td><td class='num'>38,000원</td><td class='num'>38,050원</td><td class='num buy'>150원 (+0.13%)</td></tr>
+<tr><td class='name'>두산에너빌리티</td><td class='code'>034020</td><td class='num'>12주</td><td class='num'>80,500원</td><td class='num'>80,900원</td><td class='num buy'>4,800원 (+0.50%)</td></tr>
+<tr><td class='name'>NAVER</td><td class='code'>035420</td><td class='num'>4주</td><td class='num'>214,500원</td><td class='num'>226,500원</td><td class='num buy'>48,000원 (+5.59%)</td></tr>
+<tr><td class='name'>금호타이어</td><td class='code'>073240</td><td class='num'>4주</td><td class='num'>8,000원</td><td class='num'>8,140원</td><td class='num buy'>560원 (+1.75%)</td></tr>
+<tr><td class='name'>한국콜마</td><td class='code'>161890</td><td class='num'>1주</td><td class='num'>134,000원</td><td class='num'>135,200원</td><td class='num buy'>1,200원 (+0.90%)</td></tr>
+    </tbody>
+  </table>
+  <h2>결제잔여 (평가 제외)</h2><table><thead><tr><th>종목</th><th>코드</th><th>수량</th><th>종가</th><th colspan='2'>비고</th></tr></thead><tbody><tr><td class='name'>삼성전자</td><td class='code'>005930</td><td class='num'>4주</td><td class='num'>268,000원</td><td colspan='2' class='muted'>매도가능 0 / 평가 제외</td></tr><tr><td class='name'>삼성전자우</td><td class='code'>005935</td><td class='num'>1주</td><td class='num'>187,800원</td><td colspan='2' class='muted'>매도가능 0 / 평가 제외</td></tr><tr><td class='name'>대원전선</td><td class='code'>006340</td><td class='num'>4주</td><td class='num'>15,110원</td><td colspan='2' class='muted'>매도가능 0 / 평가 제외</td></tr><tr><td class='name'>SK스퀘어</td><td class='code'>402340</td><td class='num'>1주</td><td class='num'>1,117,000원</td><td colspan='2' class='muted'>매도가능 0 / 평가 제외</td></tr></tbody></table>
+
+  <p class="foot">
+    기준시각 2026-08-13 19:26:43 · 장초 실평가 3,138,843원 ·
+    오늘 손익은 장초 실평가 대비. 평단 손익과 다름.
+    결제잔여는 평가/매매에서 제외. 계좌번호·키는 넣지 않음.
+    출처: trades.log 체결 + briefing 사유 + status.json.
+  </p>
+</div>
+</body>
+</html>
